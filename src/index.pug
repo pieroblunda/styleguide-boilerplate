@@ -1,0 +1,66 @@
+doctype html
+html(lang="en")
+  head
+    meta(charset='utf-8')
+    link(rel='stylesheet' href='css/style.css')
+    link(rel="stylesheet"
+      href="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@9.16.2/build/styles/default.min.css")
+    title probando
+  body
+    main
+      aside
+        ul.menu
+          li
+            a(href="#logo") Logo
+          li
+            a(href="#typography") Typografy
+          li
+            a(href="#colors") Colors palette
+          li
+            a(href="#buttons") Buttons & Links
+          li
+            a(href="#buttons") Icons
+          li
+            a(href="#forms") Forms
+          li
+            a(href="#tablist") Tablist
+          li
+            a(href="#layers") Layers
+          li
+            a(href="#popup") Pop-up
+          li
+            a(href="#accordions") Accordions
+          li
+            a(href="#sliders") Sliders
+          li
+            a(href="#prices") Prices
+          li
+            a(href="#breakpoints") Grids and Breakpoints
+          li
+            a(href="#loaders") Loader and skeleton
+          li
+            a(href="#helpers") Helpers
+          li
+            a(href="#mixins") Mixins
+      article
+        h1 Styleguide Example
+        include _section-01-logo.pug
+        include _section-02-typography.pug
+        include _section-03-colors.pug
+        include _section-04-buttons.pug
+        include _section-05-icons.pug
+        include _section-06-forms.pug
+        include _section-07-layers.pug
+        include _section-08-popup.pug
+        include _section-09-accordions.pug
+        include _section-10-sliders.pug
+        include _section-11-prices.pug
+        include _section-12-brekpoints.pug
+        include _section-13-loaders.pug
+        include _section-14-helpers.pug
+        include _section-15-mixins.pug
+
+  script(src="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@9.16.2/build/highlight.min.js")
+  script(src="js/clipboard.min.js")
+  script(src="https://kit.fontawesome.com/811f830d1a.js" crossorigin="anonymous")
+  script(src="js/index.js")

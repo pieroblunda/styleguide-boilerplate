@@ -1,0 +1,18 @@
+include mixins/color-component.pug
+
+section(data-section-colors)
+	h2#colors Colors palette
+	h3 Brand colors
+	.row
+		.col
+			+colorComponent('Purple', '#845EC2', 132, 94, 194, '$color-1')
+		.col
+			+colorComponent('Blue', '#2C73D2', 44, 115, 210, '$color-2')
+		.col
+			+colorComponent('Blue Marine', '#0081CF', 0, 129, 207, '$color-3')
+		.col
+			+colorComponent('Blue greened', '#0089BA', 0, 137, 186, '$color-4')
+		.col
+			+colorComponent('Green blued', '#008E9B', 0, 142, 155, '$color-5')
+		.col
+			+colorComponent('Green', '#008F7A', 0, 143, 122, '$color-6')

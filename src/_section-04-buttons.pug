@@ -1,0 +1,167 @@
+section(data-section-buttons)
+  h2#buttons Buttons and links
+  .row
+    .col
+      .content-wrapper
+        h3 Primary button
+        .row
+          .col Normal
+          .col Hover
+          .col Pressed
+          .col Disabled
+          .col Focused
+        .row
+          .col
+            button.btn.btn-primary.btn-lg button
+          .col
+            button.btn.btn-primary.btn-lg button
+          .col
+            button.btn.btn-primary.btn-lg button
+          .col
+            button.btn.btn-primary.btn-lg(disabled) button
+          .col
+            button.btn.btn-primary-btn-lg button
+        .row
+          .col
+            button.btn.btn-primary button
+          .col
+            button.btn.btn-primary button
+          .col
+            button.btn.btn-primary button
+          .col
+            button.btn.btn-primary(disabled) button
+          .col
+            button.btn.btn-primary button
+        .row
+          .col
+            button.btn.btn-primary.btn-sm button
+          .col
+            button.btn.btn-primary.btn-sm button
+          .col
+            button.btn.btn-primary.btn-sm button
+          .col
+            button.btn.btn-primary.btn-sm(disabled) button
+          .col
+            button.btn.btn-primary.btn-sm button
+  //-
+    .col
+      .tab-component
+        .tabs-wrapper
+          h3 Code example
+          button(data-tab-type="html") HTML
+          button(data-tab-type="css") CSS
+          button(data-tab-type="js") JS
+          button(data-tab-type="dependencies") Dependencies
+        .tab-content.tab-html
+          pre
+            code.lang-html
+              - var code = '<button class="btn btn-primary">button</button>';
+              | #{code}
+        .tab-content.tab-css
+          button(data-clipboard-target="#copy").clipboard
+            span.tooltip copied!
+          pre
+            code#copy.lang-css
+              | body {
+              |   background-color: #fff;
+              |   font-size: 14px;
+              |   font-weight: 300;
+              |   color: #000;
+              |   font-family: 'Open Sans', sans-serif;
+              | }
+        .tab-content.tab-js
+          pre
+            code.lang-js
+              | // Take out active in all buttons
+              | document.querySelectorAll('button[data-tab-type]').forEach(function(item, index){
+              |   item.classList.remove('active');
+              | });
+        .tab-content.tab-dependencies
+          pre
+            code Hello world!
+  
+  .row
+    .col
+      h3 Sizes
+      button.btn.btn-primary.btn-lg button
+      button.btn.btn-primary button
+      button.btn.btn-primary.btn-sm button
+    .col
+      .tab-component
+        .tabs-wrapper
+          h3 Code example
+          button(data-tab-type="html") HTML
+          button(data-tab-type="css") CSS
+          button(data-tab-type="js") JS
+          button(data-tab-type="dependencies") Dependencies
+        .tab-content.tab-html
+          pre
+            code.lang-html
+              - var code = '<button class="btn btn-primary">button</button>';
+              | #{code}
+        .tab-content.tab-css
+          pre
+            code.lang-css
+              | body {
+              |   background-color: #fff;
+              |   font-size: 14px;
+              |   font-weight: 300;
+              |   color: #000;
+              |   font-family: 'Open Sans', sans-serif;
+              | }
+        .tab-content.tab-js
+          pre
+            code.lang-js
+              | // Take out active in all buttons
+              | document.querySelectorAll('button[data-tab-type]').forEach(function(item, index){
+              |   item.classList.remove('active');
+              | });
+        .tab-content.tab-dependencies
+          pre
+            code Hello world!
+  
+  .row
+    .col
+      h3 Iconed
+      a.btn.btn-transparent.full-width button
+      a.btn.btn-dark.full-width button
+      a.btn.btn-transparent button
+  .row
+    .col
+      h3 as Link
+      a.btn.btn-transparent.full-width button
+      a.btn.btn-dark.full-width button
+      a.btn.btn-transparent button
+    .col
+      .tab-component
+        .tabs-wrapper
+          h3 Code example
+          button(data-tab-type="html") HTML
+          button(data-tab-type="css") CSS
+          button(data-tab-type="js") JS
+          button(data-tab-type="dependencies") Dependencies
+        .tab-content.tab-html
+          pre
+            code.lang-html
+              - var code = '<button class="btn btn-primary">button</button>';
+              | #{code}
+        .tab-content.tab-css
+          pre
+            code.lang-css
+              | body {
+              |   background-color: #fff;
+              |   font-size: 14px;
+              |   font-weight: 300;
+              |   color: #000;
+              |   font-family: 'Open Sans', sans-serif;
+              | }
+        .tab-content.tab-js
+          pre
+            code.lang-js
+              | // Take out active in all buttons
+              | document.querySelectorAll('button[data-tab-type]').forEach(function(item, index){
+              |   item.classList.remove('active');
+              | });
+        .tab-content.tab-dependencies
+          pre
+            code Hello world!

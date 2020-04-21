@@ -1,0 +1,44 @@
+section(data-section-icons)
+  h2#icons Icons
+  .row
+    .col
+      h3 Lalalalal
+      .icons-component
+        i.fab.fa-apple
+        i.fab.fa-github
+        i.fab.fa-youtube
+        i.fab.fa-aws
+        i.fab.fa-android
+        i.fab.fa-cc-visa
+        i.fab.fa-facebook-f
+        i.fab.fa-airbnb
+        i.fab.fa-adn
+        i.fab.fa-adobe
+        i.fab.fa-amilia
+        
+    .col
+      .tab-component
+        .tabs-wrapper
+          h3 Code example
+          button(data-tab-type="html") HTML
+          button(data-tab-type="css") CSS
+          button(data-tab-type="js") JS
+          button(data-tab-type="dependencies") Dependencies
+        .tab-content.tab-html
+          pre
+            code.lang-css
+              | <No need>
+        .tab-content.tab-css
+          pre
+            code.lang-html
+              | i.fab.fa-youtube
+        .tab-content.tab-js
+          pre
+            code.lang-js
+              | // Take out active in all buttons
+              | document.querySelectorAll('button[data-tab-type]').forEach(function(item, index){
+              |   item.classList.remove('active');
+              | });
+        .tab-content.tab-dependencies
+          pre
+            code Hello world!

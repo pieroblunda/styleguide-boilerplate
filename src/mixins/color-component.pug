@@ -1,0 +1,15 @@
+mixin colorComponent(colorName, colorHexa, r, g, b, colorVariableName)
+	.colors-component
+		.color-area.clipboard(data-clipboard-text="#{colorHexa}" style=`background-color:${colorHexa}`)
+		.data-area
+			table
+				caption Purple
+				tr
+				th HEX
+				td #{colorHexa}
+				tr
+				th RGB
+				td rgb(#{r},#{g},#{b})
+				tr
+				th SCSS
+				td #{colorVariableName}
